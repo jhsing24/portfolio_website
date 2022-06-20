@@ -163,6 +163,7 @@
         width: 130%;
         object-fit: contain;
         z-index: 1;
+        filter: drop-shadow(10px 10px 10px grey);
     }
 
     .overlay_circle {
