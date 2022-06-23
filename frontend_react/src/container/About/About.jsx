@@ -1,16 +1,11 @@
 import React, {useState, useEffect}  from 'react'
 import {motion} from 'framer-motion'
-import images from '../../constants/images'
 import {AppWrap} from '../../wrapper'
 import { urlFor, client } from '../../client'
  
 import './About.scss'
  
-/*const abouts = [
-  {title: 'Frontend Development', description: 'I have had experience creating responsive websites using various frameworks and software.', imgUrl: images.about01},
-  {title: 'Web Design', description: 'I have an eye for design and can create assets that help accentuate a website.', imgUrl: images.about02},
-  {title: 'UI/UX', description: 'I pay close attention to usability and accessibility of websites, and I always aim to improve user experience.', imgUrl: images.about03},
-]*/
+
 const About = () => {
   const [abouts, setAbouts] = useState([])
 
