@@ -21,10 +21,8 @@ const About = () => {
   
   return (
     <>
-    <h2 className='head-text'>Put some
-      <span> text </span>
-      in
-      <span> here </span>
+    <h2 className='head-text'>Crucial skillset for the
+      <span> digital age </span>
     </h2>
 
     <div className='app__profiles'>

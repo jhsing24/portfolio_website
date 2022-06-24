@@ -108,7 +108,12 @@
 
         img {
             height: 60%;
+
+            &:hover {
+                scale: 1.2
+            }
         }
+
     }
 
     div:nth-child(1){
