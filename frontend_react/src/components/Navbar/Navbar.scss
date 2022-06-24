@@ -8,8 +8,8 @@
     padding: 1rem 2rem;
     background: rgba(255, 255, 255, 0.25);
 
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 
     border: 1px solid rgba(255, 255, 255, 0.18);
 
@@ -57,7 +57,7 @@
         }
 
         a {
-            color: var(--gray-color);
+            color: var(--black-color);
             text-decoration: none;
             flex-direction: column;
             text-transform: uppercase;

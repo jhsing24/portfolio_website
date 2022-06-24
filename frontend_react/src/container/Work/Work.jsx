@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {AiFillEye, AiFillGithub} from 'react-icons/ai'
 import {motion} from 'framer-motion'
-import {AppWrap} from '../../wrapper'
+import {AppWrap, MotionWrap} from '../../wrapper'
 import {urlFor, client} from '../../client'
 import './Work.scss'
 
@@ -39,7 +39,7 @@ const Work = () => {
     <>
     <h2 className='head-text'>My Creative Portfolio</h2>
     <div className='app__work-filter'>
-      {['Website', 'React JS', 'Web App', 'All'].map((item, index) => (
+      {['All', 'Website', 'React JS', 'Web App'].map((item, index) => (
       <div 
       key={index}
       onClick={() => handleWorkFilter(item)}
@@ -96,4 +96,5 @@ const Work = () => {
   )
 }
 
-export default AppWrap(Work, 'work')
+export default AppWrap(
+  MotionWrap(Work, 'app__works'), 'work', 'app__primarybg')
