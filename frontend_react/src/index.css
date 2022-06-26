@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+h1 {
+    color: black;
+    
+}
+
+.loader-wrapper{
+  display:none;
+  position: fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color: #2b5654;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index:99;
+}
+.loader{
+  position: relative;
+}
+#logo svg {
+  animation: fill 0.5s ease forwards 2.5s;
+}
+
+#logo path:nth-child(1){
+  stroke-dasharray: 414;
+  stroke-dashoffset: 414;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(2){
+  stroke-dasharray: 731;
+  stroke-dashoffset: 731;
+  animation: line-anim 2s ease forwards .3s;
+}
+
+@keyframes line-anim{
+  to{
+      stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill{
+  from{
+      fill: transparent;
+  }
+  to{
+      fill: white;
+  }
+}

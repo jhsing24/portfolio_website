@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="./manifest.json" />
+    <script src="jquery.js"></script>
+    
+    <title>Jerome Hsing</title>
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <span class="loader">
+          <span id="logo">
+            <svg width="218" height="149" viewBox="0 0 218 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.5781 115.02L4.19531 127.617C12.3333 139.596 24.6706 145.781 41.207 146.172C53.1862 146.042 63.7005 141.973 72.75 133.965C81.8646 126.152 86.5521 115.085 86.8125 100.762V2.61719H65.2305V98.6133C65.2305 103.431 64.4818 107.435 62.9844 110.625C61.5521 113.945 59.5664 116.615 57.0273 118.633C51.819 122.734 46.3503 124.72 40.6211 124.59C36.3242 124.59 32.5807 123.581 29.3906 121.562C26.2005 119.87 23.5964 117.689 21.5781 115.02Z" stroke="white" stroke-width="5" stroke-linecap="round"
+              stroke-linejoin="miter"/>
+              <path d="M193.258 145H214.84V2.61719H193.258V63.6523H136.91V2.61719H115.328V145H136.91V82.793H193.258V145Z" stroke="white" stroke-width="5" stroke-linecap="round"
+              stroke-linejoin="miter"/>
+              <mask></mask>    
+            </svg>
+        </span>
+      </span>
+    </div>
+    <div id="root"></div> 
+  </body>
+  <script>
+    $(window).on('load', function(){
+        
+        $('.loader-wrapper').delay(2800).fadeOut("slow")
+        
+
+    })
+   
+  </script>
+</html>
